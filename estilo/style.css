@@ -7,6 +7,7 @@
 }
 body, html{
     background-color: rgb(10, 10, 31);
+    overflow-x: hidden;
 }
 /*section*/
 section#abertura{
@@ -43,4 +44,26 @@ button.btn-abertura{
 }
 button.btn-abertura:hover{
     background-color: blueviolet;
+}
+/*article id sobre mim*/
+article#sobre-mim{
+    background-color: aliceblue;
+    height: 700px;
+    width: 100%;
+}
+article#sobre-mim > div.interface{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+h1.sobre-mim{
+    text-align: center;
+}
+h2.sobre-mim{
+    text-indent: 30px;
+}
+p.sobre-mim{
+    text-align: justify;
 }
