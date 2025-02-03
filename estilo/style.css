@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*seletores globais */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*section*/
+section#abertura{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+section#abertura > div.interface{
+    align-items: center;
+    justify-content: center;
+}
