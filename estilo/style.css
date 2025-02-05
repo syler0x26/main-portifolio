@@ -11,6 +11,7 @@
 body, html{
     background-color: rgb(10, 10, 31);
     overflow-x: hidden;
+    transition: .4s;
 }
 /*header*/
 header#cabecalho{
