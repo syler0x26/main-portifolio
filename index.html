@@ -6,11 +6,13 @@
     <title>portifolio</title>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/media-Q.css" media="screen and (max-width: 580px)">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><!--boostrap-->
 </head>
 <body>
     <header id="cabecalho">
         <div class="logo"></div>
-        <nav>
+        <i id="burguer" class="bi bi-list" onclick="clickMenu()"></i>
+        <nav id="itens">
             <ul>
                 <li><a href="#">opcao1</a></li>
                 <li><a href="#">opcao2</a></li>
@@ -40,5 +42,6 @@
             </div>
         </article>
     </main>
+    <script src="estilo/script.js"></script>
 </body>
 </html>
