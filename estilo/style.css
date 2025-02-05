@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /*seletores globais */
+:root{
+    --cor1: blueviolet;
+}
 *{
     padding: 0px;
     margin: 0px;
@@ -8,6 +11,38 @@
 body, html{
     background-color: rgb(10, 10, 31);
     overflow-x: hidden;
+}
+/*header*/
+header#cabecalho{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header#cabecalho > div.logo{
+    width: 70px;
+    height: 70px;
+    background-color: aliceblue;
+    flex: 0 0 70px;
+}
+header#cabecalho > nav > ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+header#cabecalho > nav > ul > li{
+    display: inline;
+    padding: 10px;
+}
+header#cabecalho > nav > ul > li > a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-size: 1.4em;
+}
+header#cabecalho > nav > ul > li > a:hover{
+    background-color: var(--cor1);
+    color: white;
 }
 /*section*/
 section#abertura{
