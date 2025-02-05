@@ -1,1 +1,8 @@
 @charset "UTF-8";
+header#cabecalho, header#cabecalho > nav > ul{
+    flex-flow: column nowrap;
+}
+header#cabecalho > nav > ul > li > a{
+    width: 90vw;
+    background-color: aliceblue;
+}

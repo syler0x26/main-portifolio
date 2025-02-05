@@ -37,9 +37,13 @@ header#cabecalho > nav > ul > li{
     padding: 10px;
 }
 header#cabecalho > nav > ul > li > a{
+    padding: 10px;
+    display: inline-block;
     text-decoration: none;
     color: var(--cor1);
     font-size: 1.4em;
+    text-align: center;
+    border-radius: 5px;
 }
 header#cabecalho > nav > ul > li > a:hover{
     background-color: var(--cor1);
