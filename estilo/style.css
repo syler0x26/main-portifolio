@@ -26,6 +26,14 @@ header#cabecalho > div.logo{
     height: 70px;
     background-color: aliceblue;
     flex: 0 0 70px;
+    border-radius: 50%;
+    background: linear-gradient(to right, var(--cor1), var(--cor2) );
+}
+header#cabecalho > div.logo > p{
+    text-align: center;
+    font-size: 3em;
+    padding-top: 10px;
+    color: white;
 }
 header#cabecalho i{
     color: var(--cor1);
