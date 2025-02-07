@@ -2,6 +2,7 @@
 /*seletores globais */
 :root{
     --cor1: blueviolet;
+    --cor2: rgb(105, 105, 173);
 }
 *{
     padding: 0px;
