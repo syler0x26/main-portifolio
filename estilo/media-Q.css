@@ -1,8 +1,19 @@
 @charset "UTF-8";
+@media screen and (min-width:768px) and (max-width:992px){
 header#cabecalho, header#cabecalho > nav > ul{
     flex-flow: column nowrap;
 }
 header#cabecalho > nav > ul > li > a{
     width: 90vw;
     background-color: aliceblue;
+}
+i#burguer{
+    display: none;
+}
+menu{
+    display: block;
+}
+menu > ul > li{
+    display: inline-block;
+}
 }
