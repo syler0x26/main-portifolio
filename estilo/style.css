@@ -78,6 +78,9 @@ header#cabecalho > nav > ul > li > a:hover{
 section#abertura{
     height: 100vh;
     width: 100vw;
+    /*background: url('../img/bg.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;*/
 }
 section#abertura > div.interface{
     display: flex;
