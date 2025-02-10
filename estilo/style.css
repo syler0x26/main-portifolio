@@ -14,6 +14,46 @@ body, html{
     overflow-x: hidden;
     transition: .4s;
 }
+
+/*section*/
+section#abertura{
+    height: 100vh;
+    width: 100vw;
+    background: url('../img/bkg-d.png') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section#abertura > div.interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+h2.text-abertura{
+    font-size: 2em;
+    color: white;
+}
+h1.text-abertura{
+    margin-top: -20px;
+    font-size: 2em;
+    color: white;
+}
+span.text-abertura{
+    font-size: 1.4em;
+    color: blueviolet;
+}
+button.btn-abertura{
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    border: 2px solid blueviolet;
+    transition: .4s;
+}
+button.btn-abertura:hover{
+    background-color: blueviolet;
+}
 /*header*/
 header#cabecalho{
     display: flex;
@@ -74,57 +114,21 @@ header#cabecalho > nav > ul > li > a:hover{
     background-color: var(--cor1);
     color: white;
 }
-/*section*/
-section#abertura{
-    height: 100vh;
-    width: 100vw;
-    /*background: url('../img/bg.jpg') center center no-repeat;
-    background-attachment: fixed;
-    background-size: cover;*/
-}
-section#abertura > div.interface{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-h2.text-abertura{
-    font-size: 2em;
-    color: white;
-}
-h1.text-abertura{
-    margin-top: -20px;
-    font-size: 2em;
-    color: white;
-}
-span.text-abertura{
-    font-size: 1.4em;
-    color: blueviolet;
-}
-button.btn-abertura{
-    border: none;
-    padding: 15px;
-    border-radius: 10px;
-    background: transparent;
-    color: white;
-    border: 2px solid blueviolet;
-    transition: .4s;
-}
-button.btn-abertura:hover{
-    background-color: blueviolet;
-}
 /*article id sobre mim*/
 article#sobre-mim{
-    background-color: aliceblue;
-    height: 700px;
+    background-color: lightblue;
+    height: 93vh;
     width: 100%;
 }
 article#sobre-mim > div.interface{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     height: 100%;
     width: 100%;
+    background-color: lightcoral;
+}
+article#sobre-mim > div.interface > div.flex{
+    background-color: lightgreen;
 }
 h1.sobre-mim{
     text-align: center;
@@ -134,4 +138,14 @@ h2.sobre-mim{
 }
 p.sobre-mim{
     text-align: justify;
+}
+div#img-flex {
+    display: flex;
+    justify-content: center;
+}
+div#img-flex > div.img-sobre-mim{
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    border-radius: 50%;
 }
