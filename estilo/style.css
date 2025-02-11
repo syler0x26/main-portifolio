@@ -20,7 +20,7 @@ body, html{
 section#abertura{
     height: 100vh;
     width: 100vw;
-    background: url('../img/bkg-d.png') center center no-repeat;
+    background: url('../img/bkg-d.png') center left no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
