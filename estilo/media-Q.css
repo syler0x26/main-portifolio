@@ -16,4 +16,12 @@ menu{
 menu > ul > li{
     display: inline-block;
 }
+h1.text-abertura{
+    font-size: 3em;
+}
+}
+@media screen and (min-width:992px){
+    h1.text-abertura{
+        font-size: 3em;
+    }
 }
