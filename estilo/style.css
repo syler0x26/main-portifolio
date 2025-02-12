@@ -3,6 +3,7 @@
 :root{
     --cor1: blueviolet;
     --cor2: rgb(105, 105, 173);
+    --cor3: #00C2AD;
 }
 *{
     padding: 0px;
@@ -38,10 +39,11 @@ h1.text-abertura{
     margin-top: -20px;
     font-size: 2em;
     color: white;
+
 }
 span.text-abertura{
     font-size: 1.4em;
-    color: blueviolet;
+    color: var(--cor1);
 }
 button.btn-abertura{
     border: none;
@@ -185,3 +187,14 @@ a.link-sobre-mim:hover{
     height: 100%;
     background-color: var(--cor1);
 }*/
+/*footer*/
+footer{
+    display: flex;
+}
+footer div#footer{
+    width: 100%;
+    text-align: center;
+}
+footer div#footer h3.footer, p.footer {
+    color: aliceblue;
+}
