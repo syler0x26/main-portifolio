@@ -34,12 +34,12 @@ section#abertura > div.interface{
     height: 100%;
 }
 h2.text-abertura{
-    font-size: 2em;
+    font-size: 3em;
     color: white;
 }
 h1.text-abertura{
     margin-top: -20px;
-    font-size: 2em;
+    font-size: 3em;
     color: white;
 
 }
