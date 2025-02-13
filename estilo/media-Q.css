@@ -31,3 +31,16 @@ h1.text-abertura{
         font-size: 5em;
     }
 }
+@media only screen and (orientation: landscape) {
+    /* Ajustes para modo paisagem */
+    section#abertura {
+        height: 100vh; /* Ajuste a altura conforme necessário */
+    }
+    header#cabecalho {
+        flex-direction: row; /* Altera a direção para linha */
+        align-items: center; /* Alinha itens ao centro */
+    }
+    header#cabecalho i {
+        width: 90vw; /* Ajuste a largura conforme necessário */
+    }
+}
