@@ -1,21 +1,5 @@
 @charset "UTF-8";
 @media screen and (min-width:768px) and (max-width:992px){
-header#cabecalho, header#cabecalho > nav > ul{
-    flex-flow: column nowrap;
-}
-header#cabecalho > nav > ul > li > a{
-    width: 90vw;
-    background-color: aliceblue;
-}
-i#burguer{
-    display: none;
-}
-menu{
-    display: block;
-}
-menu > ul > li{
-    display: inline-block;
-}
 h2.text-abertura{
     font-size: 4em;
 }
@@ -35,12 +19,5 @@ h1.text-abertura{
     /* Ajustes para modo paisagem */
     section#abertura {
         height: 100vh; /* Ajuste a altura conforme necessário */
-    }
-    header#cabecalho {
-        flex-direction: row; /* Altera a direção para linha */
-        align-items: center; /* Alinha itens ao centro */
-    }
-    header#cabecalho i {
-        width: 90vw; /* Ajuste a largura conforme necessário */
     }
 }
