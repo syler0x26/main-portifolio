@@ -25,7 +25,7 @@ body{
 section#abertura{
     height: 100vh;
     width: 100vw;
-    background: url('../img/bkg-d.png') center left no-repeat;
+    background: url('../img/bkg-d.png') center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -74,15 +74,15 @@ header#cabecalho {
     border: 2px solid rgb(10, 10, 31);
     border-radius: 15px;
     width: 100%;
-    height: 100%;
+    height: 100px;
     padding: 0 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 header#cabecalho > div.logo{
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     background-color: #00C2AD;
     background: url('../img/favicom.jpg') center center;
     background-size: cover;
@@ -106,8 +106,7 @@ header#cabecalho > div.logo{
 }
 /*article id sobre mim*/
 article#sobre-mim{
-    background-color: lightblue;
-    height: 93vh;
+    height: 100%;
     width: 100%;
 }
 article#sobre-mim > div.interface{
@@ -115,9 +114,6 @@ article#sobre-mim > div.interface{
     justify-content: center;
     height: 100%;
     width: 100%;
-    background: rgb(10, 10, 31) url('../img/bg-small.jpg') center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 article#sobre-mim > div.interface > div.flex{
     background-color: white;
