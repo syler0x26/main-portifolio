@@ -104,7 +104,7 @@ header#cabecalho > div.logo{
     color: var(--cor1);
     font-weight: bolder;
 }
-/*article id sobre mim*/
+/*article sobre mim*/
 article#sobre-mim{
     height: 100%;
     width: 100%;
@@ -132,6 +132,7 @@ div#img-flex > div.img-sobre-mim{
     background: url('../img/profile.jpg') center center;
     background-size: cover;
     border-radius: 50%;
+    border: 2px solid var(--cor1);
 }
 div.text-sobre-mim{
     padding: 15px;
@@ -200,11 +201,30 @@ div#itens-container{
 footer{
     margin-top: 50px;
     display: flex;
+    justify-content: center;
+    color: white;
 }
-footer div#footer{
-    width: 100%;
-    text-align: center;
+span.footer{
+    color: var(--cor1);
+    font-weight: bolder;
 }
-footer div#footer h3.footer, p.footer {
-    color: aliceblue;
+p.footer{
+    font-size: 1.4em;
+}
+#footer-left{
+    float: left;
+    margin-right: 16px;
+    border-right: 2px solid var(--cor1);
+    padding-right: 10px;
+}
+#footer-right{
+    float: right;
+}
+#footer-right i{
+    font-size: 1.7em;
+    padding: 10px;
+    transition: .4s;
+}
+#footer-right i:hover{
+    color: #00C2AD;
 }
