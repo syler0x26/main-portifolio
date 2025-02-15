@@ -64,6 +64,22 @@ button.btn-abertura{
 button.btn-abertura:hover{
     background-color: blueviolet;
 }
+.para-baixo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid var(--cor1);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.para-baixo i {
+    font-size: 2em;
+    color: var(--cor1);
+}
 /*header*/
 header#cabecalho {
     position: -webkit-sticky; 
@@ -210,6 +226,9 @@ span.footer{
 }
 p.footer{
     font-size: 1.4em;
+}
+a{
+    color: var(--cor1);
 }
 #footer-left{
     float: left;
