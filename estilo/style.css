@@ -64,6 +64,12 @@ button.btn-abertura{
 button.btn-abertura:hover{
     background-color: blueviolet;
 }
+.container-para-baixo{
+    display: flex;
+    position: relative;
+    top: 40%;
+    left: -35%;
+}
 .para-baixo{
     display: flex;
     align-items: center;
@@ -75,10 +81,15 @@ button.btn-abertura:hover{
     border-radius: 50%;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    transition: .4s;
 }
 .para-baixo i {
     font-size: 2em;
-    color: var(--cor1);
+    color: white;
+}
+.para-baixo:hover{
+    background-color: var(--cor1);
+    transform: translateY(10px);
 }
 /*header*/
 header#cabecalho {
@@ -104,6 +115,10 @@ header#cabecalho > div.logo{
     background-size: cover;
     border-radius: 50%;
     margin: 15px;
+    transition: .5s;
+}
+header#cabecalho > div.logo:hover{
+    transform: rotateY(160deg);
 }
 #itens ul {
     display: flex;
@@ -119,6 +134,10 @@ header#cabecalho > div.logo{
     font-size: 1.4em;
     color: var(--cor1);
     font-weight: bolder;
+    transition: .4s;
+}
+#itens a:hover{
+    color: #00C2AD;
 }
 /*article sobre mim*/
 article#sobre-mim{
@@ -142,8 +161,8 @@ div#img-flex {
     justify-content: center;
 }
 div#img-flex > div.img-sobre-mim{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background-color: rgb(10, 10, 31);
     background: url('../img/profile.jpg') center center;
     background-size: cover;
