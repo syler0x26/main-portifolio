@@ -34,6 +34,7 @@ button{
 button:hover{
     background-color: var(--cor-principal);
     color: white;
+    cursor: pointer;
 }
 *{
     padding: 0px;
@@ -81,19 +82,17 @@ span.text-abertura{
     color: var(--cor1);
 }
 button.btn-abertura{
-    border: none;
-    padding: 20px;
+    padding: 1.5rem;
     font-size: 2em;
     border-radius: 10px;
-    background: transparent;
+    background: var(--cor1);
     color: white;
     backdrop-filter: blur(5px);
    -webkit-backdrop-filter: blur(5px);
-    border: 2px solid blueviolet;
     transition: .4s;
 }
 button.btn-abertura:hover{
-    background-color: blueviolet;
+    background-color: var(--cor-principal);
 }
 .container-para-baixo{
     display: flex;
@@ -171,13 +170,13 @@ div.logo span{
 }
 /*article sobre mim*/
 article#sobre-mim{
-    min-height: 100vh;
-    margin: 2.5rem auto;
+    height: 100%;
+
     padding: 6rem 3rem;
 }
 .sobre{
     display: flex;
-    width: 75%;
+    width: 100%;
 }
 .sobre h1{
     font-family: var(--font-secundaria);
@@ -203,61 +202,21 @@ article#sobre-mim{
 }
 .info-sobre-mim{
     padding-right: 3rem;
-    flex: 1;
+    flex: 2 1 1550rem;
+}
+.foto{
+    border-radius: 50%;
+    border: 0.2rem solid var(--cor1);
+    background-color: var(--cor1);
 }
 .foto-me{
-    height: 100%;
+
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
     flex: 1;
-}
-article#sobre-mim > div.interface{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-article#sobre-mim > div.interface > div.flex{
-    background-color: white;
-    border-radius: 10px;
-    align-items: center;
-    width: 992px;
-    height: 100%;
-}
-div#img-flex {
-    display: flex;
-    justify-content: center;
-}
-div#img-flex > div.img-sobre-mim{
-    width: 350px;
-    height: 350px;
-    background-color: rgb(10, 10, 31);
-    background: url('../img/profile.jpg') center center;
-    background-size: cover;
-    border-radius: 50%;
-    border: 2px solid var(--cor1);
-}
-div.text-sobre-mim{
-    padding: 15px;
-}
-/*olhar uma fonte*/
-h1.sobre-mim{
-    text-align: center;
-    font-size: 2em;
-    color: var(--cor1);
-}
-h2.sobre-mim{
-    text-indent: 30px;
-    font-size: 1.4em;
-}
-p.sobre-mim{
-    text-indent: 30px;
-    text-align: justify;
-    font-size: 1.2em;
-}
-span.sobre-mim{
-    color: var(--cor1);
+    margin-bottom: 1rem;
 }
 a.link-sobre-mim{
     text-decoration: none;
@@ -268,6 +227,8 @@ a.link-sobre-mim{
 a.link-sobre-mim:hover{
     text-decoration: underline;
 }
+/*olhar uma fonte*/
+
 /*&:before{
     content: '';
     position: absolute;
@@ -281,6 +242,7 @@ a.link-sobre-mim:hover{
 section#projetos{
     height: 100%;
     width: 100%;
+    background-image: linear-gradient(60deg, var(--cor-gradiente-01), var(--cor-gradiente-02));
 }
 .h1-projetos{
     color: var(--cor1);
@@ -297,6 +259,7 @@ div.container{
     justify-content: center;
     align-items: center;
     gap: 3rem 1.2rem;
+    padding: 5rem 0 5rem 0;
 }
 div#itens-container{
     background-color: var(--cor-principal-alpha);
@@ -306,6 +269,10 @@ div#itens-container{
     height: 100%;
     margin: 1em;
     box-shadow: var(--shadow);
+    transition: .4s;
+}
+div#itens-container:hover{
+    transform: translateY(-.5rem);
 }
 div#itens-container img{
     height: 100%;
@@ -323,35 +290,54 @@ div#itens-container p{
 }
 /*footer*/
 footer{
-    margin-top: 50px;
+    background-color: var(--cor044);
     display: flex;
-    justify-content: center;
-    color: white;
+    padding: 2rem;
 }
-span.footer{
-    color: var(--cor1);
-    font-weight: bolder;
+.container-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: auto;
 }
-p.footer{
-    font-size: 1.4em;
+footer div{
+    padding: .5rem;
+    flex: 1 1 250px;
+    flex-wrap: wrap;
 }
-a{
-    color: var(--cor1);
+footer div h1{
+    font-family: var(--font-secundaria);
+    color: var(--cor022);
 }
-#footer-left{
-    float: left;
-    margin-right: 16px;
-    border-right: 2px solid var(--cor1);
-    padding-right: 10px;
+footer div h2{
+    color: var(--cor3);
 }
-#footer-right{
-    float: right;
+footer div p{
+    font-weight: 300;
+    color: var(--cor011);
+    text-align: justify;
 }
-#footer-right i{
-    font-size: 1.7em;
-    padding: 10px;
+footer div span{
+    color: var(--cor-principal);
+}
+footer hr{
+    border: .1rem solid var(--cor-destaque);
+    width: 7rem;
+}
+.icon{
+    width: 100%;
+}
+footer i{
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--cor-destaque);
     transition: .4s;
 }
-#footer-right i:hover{
-    color: #00C2AD;
+footer i:hover{
+    color: var(--cor-gradiente-01);
+}
+.rodape{
+    height: 1rem;
 }

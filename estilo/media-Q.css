@@ -6,6 +6,10 @@ h2.text-abertura{
 h1.text-abertura{
     font-size: 5em;
 }
+.sobre{
+    margin: 1.2rem auto;
+    width: 75%;
+}
 }
 @media screen and (min-width:992px){
     h2.text-abertura{
@@ -14,10 +18,8 @@ h1.text-abertura{
     h1.text-abertura{
         font-size: 5em;
     }
+    .sobre{
+        margin: 1.2rem auto;
+        width: 75%;
 }
-@media only screen and (orientation: landscape) {
-    /* Ajustes para modo paisagem */
-    section#abertura {
-        height: 100vh; /* Ajuste a altura conforme necessário */
-    }
 }
