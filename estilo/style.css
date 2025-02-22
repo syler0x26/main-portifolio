@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;700&display=swap');
 /*seletores globais */
 :root{
-    --cor1: blueviolet;
+    --cor1: #7231ff;/*#462f9f*/
     --cor2: rgb(105, 105, 173);
     --cor3: #00C2AD;
     --font-principal:"Poppins", serif;
@@ -48,16 +48,16 @@ html{
 body{
     height: 100vh;
     width: 100vw;
-    background-color: white;
+    background-color: papayawhip;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: .2s;
 }
 
 /*section*/
 section#abertura{
-    height: 100vh;
+    height: 88vh;
     width: 100vw;
-    background: url('../img/back.jpg') center center no-repeat;
+    background: url('../img/bg-small.jpg') center center;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -67,15 +67,13 @@ section#abertura > div.interface{
     justify-content: center;
     height: 100%;
 }
-h2.text-abertura{
-    font-size: 3em;
-    color: white;
-}
 h1.text-abertura{
-    margin-top: -20px;
+    margin-top: -3.5rem;
     font-size: 3em;
     color: white;
-
+    background: -webkit-linear-gradient(left, var(--cor1), var(--cor-gradiente-02));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 span.text-abertura{
     font-size: 1.4em;
@@ -140,11 +138,13 @@ header#cabecalho {
 }
 div.logo{
     margin: 15px;
+    background-color: var(--cor-gradiente-01);
+    border-radius: 2rem;
 }
 div.logo h1{
     font-weight: 700;
-    letter-spacing: .1rem;
-    color: var(--cor-destaque);
+    letter-spacing: -.1rem;
+    color: var(--cor3);
 }
 div.logo span{
     color: var(--cor1);
@@ -171,8 +171,7 @@ div.logo span{
 /*article sobre mim*/
 article#sobre-mim{
     height: 100%;
-
-    padding: 6rem 3rem;
+    padding: 6rem .7rem;
 }
 .sobre{
     display: flex;
@@ -201,7 +200,7 @@ article#sobre-mim{
     color: var(--cor033);
 }
 .info-sobre-mim{
-    padding-right: 3rem;
+    padding-right: 1.5rem;
     flex: 2 1 1550rem;
 }
 .foto{
