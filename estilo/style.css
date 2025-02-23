@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;700&display=swap');
 /*seletores globais */
 :root{
-    --cor1: #7231ff;/*#462f9f*/
+    --cor1: #7231ff;/*7231ff*/
     --cor2: rgb(105, 105, 173);
     --cor3: #00C2AD;
     --font-principal:"Poppins", serif;
     --font-secundaria: "Lobster", serif;
-    --cor-principal: #747bff;
+    --cor-principal: #747bff; /*747bff*/
     --cor-destaque: #ffad32; 
     --cor-principal-alpha: #747bff2d;
     --cor-gradiente-01: #ffe7c2;
@@ -18,24 +18,43 @@
     --cor033: #767f86;
     --cor044: #3c4852;
     --cor05: #00000043;
+    --cor6: #040416;
     /*box shadow*/
     --shadow: 0 0.3rem 0.4rem 0.1rem var(--cor05);
 }
 button{
-    padding: .9rem;
+    /*padding: .9rem;
     font-size: 1rem;
     font-weight: 700;
     background-color: var(--cor1);
     color: white;
     border-radius: 3rem;
     border: none;
-    transition: .4s;
-}
-button:hover{
-    background-color: var(--cor-principal);
-    color: white;
+    transition: .4s;*/
+    /*teste*/
+    background: linear-gradient(145deg, var(--cor-gradiente-02), var(--cor1));
+    border: 2px solid var(--cor-gradiente-02);/*ffdf00*/
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
+
+button:hover {
+        /*background-color: var(--cor-principal);
+    color: white;
+    cursor: pointer;*/
+    background: linear-gradient(145deg, var(--cor1),var(--cor-gradiente-02));/*#ffa700 #ffd700*/
+    border-color: var(--cor-gradiente-02);
+    box-shadow: 0 3px 3px var(--cor1);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    transform: scale(1.1);
+  }
 *{
     padding: 0px;
     margin: 0px;
@@ -62,21 +81,22 @@ section#abertura{
     background-size: cover;
 }
 .movi{
+
     width: 100%;
     display: flex;
     justify-content: end;
     padding: 1rem 3rem 1rem 1rem ;
 }
 .trilho{
-    width: 170px;
-    height: 70px;
+    width: 150px;
+    height: 50px;
     background-color: rgb(221, 184, 126);
     border-radius: 150px;
     position: relative;
 }
 .indicador{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     background-color: papayawhip;
     border-radius: 50%;
@@ -93,7 +113,10 @@ section#abertura{
     background-color: black;
 }
 body.dark{
-    background-color: rgb(29, 29, 48);
+    background-color: #040416;
+}
+.dark p{
+    color: white;
 }
 section#abertura > div.interface{
     display: flex;
@@ -223,15 +246,14 @@ article#sobre-mim{
     border-radius: 1rem;
     width: 15rem;
 }
-.sobre p{
+ p{
     margin: 1rem 0;
     text-align: justify;
     font-size: 1.3rem;
     color: var(--cor033);
 }
 .info-sobre-mim{
-    padding-right: 1.5rem;
-    flex: 2 1 1550rem;
+    flex: 1 1 150rem;
 }
 .foto{
     border-radius: 50%;
@@ -239,7 +261,6 @@ article#sobre-mim{
     background-color: var(--cor1);
 }
 .foto-me{
-
     align-items: center;
     justify-content: center;
     display: flex;
@@ -275,17 +296,20 @@ section#projetos{
     /*background-image: linear-gradient(60deg, var(--cor-gradiente-01), var(--cor-gradiente-02));*/
 }
 .back{
-    background: url('../img/pexels-steve-29463246.jpg') center center;
-    background-attachment: fixed;
+    background: linear-gradient(60deg, var(--cor-gradiente-01), var(--cor-gradiente-02));
 }
 .h1-projetos{
-    color: var(--cor1);
+
+    background: -webkit-linear-gradient(left, var(--cor1), var(--cor-gradiente-02));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     padding: 10px;
     font-size: 2em;
 }
 hr{
     border: .2rem solid var(--cor1);
+
 }
 div.container{
     display: flex;
@@ -313,6 +337,8 @@ div#itens-container img{
     width: 100%;
 }
 div#itens-container span{
+    color: var(--cor1);
+    font-family: var(--font-principal);
     font-weight: 700;
     align-items: center;
 }
@@ -324,7 +350,7 @@ div#itens-container p{
 }
 /*footer*/
 footer{
-    background-color: var(--cor044);
+
     display: flex;
     padding: 2rem;
 }
@@ -348,7 +374,7 @@ footer div h2{
 }
 footer div p{
     font-weight: 300;
-    color: var(--cor011);
+    color: var(--cor033);
     text-align: justify;
 }
 footer div span{
