@@ -10,40 +10,43 @@
     <link rel="shortcut icon" href="img/favicom-16px.jpg" type="image/x-icon">
 </head>
 <body>
-    <div class="movi">
-        <div class="trilho" id="trilho">
+    <main>
+    <header class="movi">
+        <div class="logo">&#60;SwM&#62;</div>
+        <nav id="itens">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+        </ul>
+     </nav>
+     <div class="tema">
+        <i class="bi bi-sun-fill"></i> <div class="trilho" id="trilho">
             <div class="indicador"></div>
         </div>
+        <i class="bi bi-moon-fill"></i>
         </div>
+    </header>
     <section id="abertura">
         <div class="interface">
             <div class="flex">
-                <h1 class="text-abertura">Dev</h2>
                 <h1 class="text-abertura">Wesley Marcelino</h1>
-                <button class="btn-abertura">contate-me <i class="bi bi-send-fill"></i></button>
+                <button>contate-me <i class="bi bi-send-fill"></i></button>
             </div><!--flex-->
         </div><!--interface-->
 
         <div class="container-para-baixo">
-            <a href="#cabecalho">
+            <a href="#sobre-mim">
             <div class="para-baixo">
                 <i class="bi bi-chevron-double-down"></i>
         </div><!--para baixo-->
         </a>
             </div><!--container-para-baixo-->
     </section><!--abertura-->
-    <main>
-        <header id="cabecalho">         
-            <div class="logo">
-                <h1>&#60;WS<span>0x26&#62;</span> </h1>
-            </div>
-            <nav id="itens">
-                <ul>
-                    <li><a href="#projetos">projetos</a></li>
-                    <li><a href="#">home</a></li>
-                </ul>
-            </nav>
-        </header><!--header-->
+    <div class="text" id="sobre-mim">
+        <h1>&#60;Sobre mim&#62;</h1>
+        <hr>
+    </div>
         <article class="sobre" id="sobre-mim">
                 <div class="info-sobre-mim">
                     <div class="foto-me">
@@ -61,9 +64,10 @@
                 <div class="dominios">div de dominio</div>
         </article><!--sobre-mim-->
         <section id="projetos">
+            <div class="text">
+            <h1>Projetos</h1>
             <hr>
-            <h1 class="h1-projetos">Projetos</h1>
-
+            </div>
             <div class="back">
             <div class="container"><!--grupo dos projetos-->
                 <div id="itens-container"> 
