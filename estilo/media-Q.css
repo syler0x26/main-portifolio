@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@media (max-width:768px){
+    .logo{
+        display: none;
+    }
+}
 @media screen and (min-width:768px) and (max-width:992px){
 h2.text-abertura{
     font-size: 4em;
@@ -9,6 +14,9 @@ h1.text-abertura{
 .sobre{
     margin: 1.2rem auto;
     width: 75%;
+}
+.mobile-menu{
+    display: none;
 }
 }
 @media screen and (min-width:992px){
@@ -21,5 +29,8 @@ h1.text-abertura{
     .sobre{
         margin: 1.2rem auto;
         width: 75%;
+}
+.mobile-menu{
+    display: none;
 }
 }

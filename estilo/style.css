@@ -3,19 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;700&display=swap');
 /*seletores globais */
 :root{
-    --cor1: #7231ff;/*7231ff*/
+    --cor1: #585e6c;/*7231ff*/
     --cor2: rgb(105, 105, 173);
-    --cor3: #00C2AD;
+    --cor3: #b5bbc9;
+    --cor4: #29292b;
     --font-principal:"Poppins", serif;
     --font-secundaria: "Lobster", serif;
     --cor-principal: #747bff; /*747bff*/
-    --cor-destaque: #ffad32; 
+    --cor-destaque: blueviolet; 
     --cor-principal-alpha: #747bff2d;
     --cor-gradiente-01: #ffe7c2;
     --cor-gradiente-02: #bdacff;
     --cor011: #f9f9f9;
     --cor022: #b8c0c7;
-    --cor033: #767f86;
+    --cor033: #000000;
     --cor044: #3c4852;
     --cor05: #00000043;
     --cor6: #040416;
@@ -56,7 +57,7 @@ body{
     overflow-x: hidden;
     height: 100vh;
     width: 100vw;
-    background-color: white;
+    background-color: var(--cor3);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: .4s;
 }
@@ -78,6 +79,19 @@ header {
 }
 .logo{
     font-size: 2rem;
+}
+.mobile-menu{
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+nav{
+    display: flex;
+    height: 8vh;
 }
 #itens ul {
     display: flex;
@@ -131,7 +145,7 @@ header {
     background-color: black;
 }
 body.dark{
-    background-color: #040416;
+    background-color: var(--cor4);
 }
 .dark p{
     color: white;
@@ -215,7 +229,6 @@ button.btn-abertura:hover{
 }
 article#sobre-mim{
     height: 100%;
-    padding: 6rem .7rem;
 }
 .sobre{
     display: flex;
@@ -234,7 +247,7 @@ article#sobre-mim{
     width: 15rem;
 }
  p{
-    margin: 1rem 0;
+    padding: 2rem;
     text-align: justify;
     font-size: 1.3rem;
     color: var(--cor033);
@@ -283,7 +296,8 @@ section#projetos{
     /*background-image: linear-gradient(60deg, var(--cor-gradiente-01), var(--cor-gradiente-02));*/
 }
 .back{
-    background: linear-gradient(60deg, var(--cor-gradiente-01), var(--cor-gradiente-02));
+    background: linear-gradient(60deg, var(--cor4), var(--cor3) 80%, var(--cor-destaque) );
+
 }
 h1{
     background: -webkit-linear-gradient(left, var(--cor1), var(--cor-gradiente-02));
@@ -337,9 +351,11 @@ div#itens-container p{
 }
 /*footer*/
 footer{
-
     display: flex;
-    padding: 2rem;
+}
+.centro{
+    display: flex;
+    top: 0;
 }
 .container-footer{
     display: flex;
@@ -357,19 +373,13 @@ footer div h1{
     color: var(--cor022);
 }
 footer div h2{
-    color: var(--cor3);
+    font-weight: 700;
+    color: var(--cor-destaque);
 }
 footer div p{
     font-weight: 300;
     color: var(--cor033);
     text-align: justify;
-}
-footer div span{
-    color: var(--cor-principal);
-}
-footer hr{
-    border: .1rem solid var(--cor-destaque);
-    width: 7rem;
 }
 .icon{
     width: 100%;
@@ -379,12 +389,18 @@ footer i{
     width: 100%;
     padding: 1rem;
     cursor: pointer;
-    color: var(--cor-destaque);
+    color: var(--cor1);
     transition: .4s;
 }
 footer i:hover{
-    color: var(--cor-gradiente-01);
+    color: var(--cor-destaque);
 }
 .rodape{
-    height: 1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.rodape span{
+    font-weight: 700;
+    color: var(--cor-destaque);
 }
