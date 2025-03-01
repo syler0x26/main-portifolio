@@ -48,6 +48,7 @@ button:hover {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    text-transform: capitalize;
 }
 html{
     scroll-behavior: smooth;
@@ -259,6 +260,7 @@ article#sobre-mim{
     border-radius: 50%;
     border: 0.2rem solid var(--cor1);
     background-color: var(--cor1);
+    overflow: hidden;
 }
 .foto-me{
     align-items: center;
