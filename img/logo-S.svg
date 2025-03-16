@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="logo-S.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.72426347"
+     inkscape:cx="396.26464"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect21"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-44.949251 : 6.5761971 : 1"
+       inkscape:vp_y="0 : 1538.8829 : 0"
+       inkscape:vp_z="444.45861 : 6.5761971 : 1"
+       inkscape:persp3d-origin="199.75468 : -69.598507 : 1"
+       id="perspective3" />
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#359381;stroke-width:0.264583;fill-opacity:1"
+       d="m 141.37638,104.84502 -29.95572,-38.357936 -29.225089,43.837636 61.372689,50.7786 1.09595,-2.5572 -58.815502,-48.2214 26.302582,-39.819187 27.76384,35.800737 z"
+       id="path24" />
+    <path
+       style="fill:#359381;stroke-width:0.27764;fill-opacity:1"
+       d="m 146.85609,160.738 -68.313655,-1.52299 28.560505,-25.51021 2.31573,3.04599 -23.54313,19.41822 57.89292,1.523 z"
+       id="path25" />
+    <path
+       style="fill:#359381;stroke-width:0.264583;fill-opacity:1"
+       d="m 113.24723,130.41697 29.22509,-24.47601 -3.28782,-2.19188 -27.39852,24.47601 z"
+       id="path27" />
+    <path
+       style="fill:#359381;stroke-width:0.264583;fill-opacity:1"
+       d="m 115.80443,78.177122 17.90037,22.649448 -5.84502,5.84501 z"
+       id="path28" />
+    <path
+       style="fill:#359381;stroke-width:0.264583;fill-opacity:1"
+       d="m 108.49815,139.54982 4.01845,5.11439 -23.380069,9.86347 z"
+       id="path29" />
+  </g>
+</svg>

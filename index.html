@@ -1,154 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portifolio</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--boostrap-->
     <link rel="stylesheet" href="estilo/media-Q.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><!--boostrap-->
-    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
 </head>
-<body>
-    <main>
-    <header class="movi">
-        <div class="logo"><img src="img/pimenta-logo.png" alt="logo"></div>
-        <nav id="itens">
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#sobre-mim">Sobre mim</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-        </ul>
-     </nav>
-     <div class="tema">
-        <i class="bi bi-sun-fill"></i> <div class="trilho" id="trilho">
-            <div class="indicador"></div>
-        </div>
-        <i class="bi bi-moon-fill"></i>
-        </div>
-    </header>
-    <section id="abertura">
-        <div class="interface">
-            <div class="flex">
-                <h1 class="text-abertura">Wesley Marcelino</h1>
-                <button>contate-me <i class="bi bi-send-fill"></i></button>
-            </div><!--flex-->
-        </div><!--interface-->
 
-        <div class="container-para-baixo">
-            <a href="#sobre-mim">
-            <div class="para-baixo">
-                <i class="bi bi-chevron-double-down"></i>
-        </div><!--para baixo-->
-        </a>
-            </div><!--container-para-baixo-->
-    </section><!--abertura-->
-    <div class="text" id="sobre-mim">
-        <h1>&#60;Sobre mim&#62;</h1>
-        <hr>
-    </div>
-        <article class="sobre" id="sobre-mim">
-                <div class="info-sobre-mim">
-                    <div class="foto-me">
-                        <div class="foto">
-                            <img src="img/profile-me.png.jpg" alt="Wesley Marcelino">
-                        </div>
-                        </div>
-                    <h2> Olá, meu nome é <span>Wesley Marcelino</span></h2>
-                    <hr>
-                    <p>
-                        Sou um desenvolvedor <a href="#" class="link-sobre-mim">full-stack</a> dedicado, sempre em busca de aprimorar minhas habilidades. Apaixonado por segurança da informação (infosec), estou atento às melhores práticas e tendências para garantir que meus projetos sejam funcionais e seguros. Minha experiência abrange diversas tecnologias e linguagens de programação, e estou sempre disposto a enfrentar novos desafios e explorar novas soluções.
-                    </p>
-                    <button>Cv</button>
-                </div><!--info-sobre-mim-->
-        </article><!--sobre-mim-->
-        <section id="projetos">
-            <div class="text">
-            <h1>Projetos</h1>
-            <hr>
+<body>
+    <article id="home">
+        <div class="container-header">
+            <div class="box-header">
+                <h3 class="mind">Syler 0x26</h3>
+                <h1 id="text">Wesley <span>Marcelino</span></h1>
             </div>
-            <div class="back">
-            <div class="container"><!--grupo dos projetos-->
-                <div id="itens-container"> 
-                    <img src="img/projeto-1-p.png" alt="viagens">
-                    <div>
-                    <span>Web site </span> - Viagens
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    </p>
-                    <a href="https://syler0x26.github.io/site-viagens/" target="_blank"><button>Ver projeto</button></a>
+        </div>
+    </article>
+    <header>
+        <section class="padr">
+            <div class="logo">
+                <img src="img/LOGOTIPO.png" alt="logo">
+            </div>
+            <nav>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"> </div>
+                    <div class="line3"></div>
                 </div>
+                <ul class="nav-list">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">sobre mim</a></li>
+                    <li><a href="#projetos">projetos</a></li>
+                    <li><a href="#contato">contato</a></li>
+                </ul>
+
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <section class="padr">
+                <div class="container-sobre">
+                    <div class="box-sobre">
+                        <div class="img-sobre"></div>
+                        <div class="text-sobre">
+                            <h2 class="title">Olá, sou dev front-end</h2>
+                            <p>dedicado a transformar ideias criativas em experiências digitais incríveis. Minha missão é projetar e construir interfaces que sejam visualmente atraentes, responsivas e fáceis de usar.</p>
+                            <h2 class="title">Por que escolher meu trabalho:</h2>
+                            <p>
+                                Crio experiências que combinam design limpo e funcionalidade intuitiva, focando no que realmente importa: os usuários. Vamos construir juntos algo incrível?
+                            </p>
+                            <marquee behavior="scroll" direction="left">
+                                <i class="bi bi-filetype-css"></i>
+                                <i class="bi bi-filetype-js"></i>
+                                <i class="bi bi-filetype-html"></i>
+                            </marquee>
+                            <div class="dominio">
+                            <h3>dominios:</h3>
+                            <p class="a">Javascript</p>
+                            <p class="b">html</p>
+                            <p class="c">css</p>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="itens-container"> 
-                    <img src="img/projeto-2.png" alt="Pizzaria">
-                    <div>
-                    <span>Web site </span> - Pizzaria
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    </p>
-                    <a href="https://syler0x26.github.io/phpizzaria/" target="_blank"><button>Ver projeto</button></a>
+            </section>
+        </section>
+        <section class="projetos" id="projetos">
+            <div class="container-projetos">
+                <h2 class="title"><span>Meus </span>Projetos</h2>
+                <div class="box-projetos">
+                    <div class="card">
+                        <div class="img-projetos">
+                            <img src="img/projeto-1-p.png" alt="projeto viagens">
+                        </div>
+                        <h3>Web site - <span>viagens</span></h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas provident quibusdam sed
+                            odit
+                            velit earum similique veritatis, dolorum at, cumque eligendi, id quo deleniti. Eaque
+                            nostrum
+                            sit nam ipsum similique?
+                        </p>
+                        <button class="bnt">Ver Projeto</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-projetos">
+                            <img src="img/projeto-2.png" alt="projeto pizzaria">
+                        </div>
+                        <h3>Web site - <span>pizzaria</span></h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas provident quibusdam sed
+                            odit
+                            velit earum similique veritatis, dolorum at, cumque eligendi, id quo deleniti. Eaque
+                            nostrum
+                            sit nam ipsum similique?
+                        </p>
+                        <button class="bnt">Ver Projeto</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-projetos">
+                            <img src="img/projeto-3.png" alt="projeto vendas">
+                        </div>
+                        <h3>Web site - <span>vendas</span></h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas provident quibusdam sed
+                            odit
+                            velit earum similique veritatis, dolorum at, cumque eligendi, id quo deleniti. Eaque
+                            nostrum
+                            sit nam ipsum similique?
+                        </p>
+                        <button class="bnt">Ver Projeto</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="img-projetos">
+                            <img src="img/projeto-1-p.png" alt="projeto viagens">
+                        </div>
+                        <h3>Web site - <span>viagens</span></h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas provident quibusdam sed
+                            odit
+                            velit earum similique veritatis, dolorum at, cumque eligendi, id quo deleniti. Eaque
+                            nostrum
+                            sit nam ipsum similique?
+                        </p>
+                        <button class="bnt"> Ver Projeto</button>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <section id="contato">
+                <div class="container-contato">
+                    <div class="box-contato">
+                        <h1>Syler 0x26</h1>
+                        <h2>contate-me:</h2>
+                        <div class="btn-contato">
+                            <a href="#"></a><button class="btn">whatsapp <i class="bi bi-whatsapp"></i></button></a>
+                        <a href="#"><button class="btn">linkedin <i class="bi bi-linkedin"></i></button></a>
+                        </div>
+                        <h2>redes sociais:</h2>
+                        <div class="btn-contato">
+                            <a href="#"></a><button class="btn">instagram <i class="bi bi-instagram"></i></i></button></a>
+                        <a href="#"><button class="btn">github <i class="bi bi-github"></i></button></a>
+                        </div>
+                    </div>
                 </div>
-                <div id="itens-container"> 
-                    <img src="img/img-p-2.jpg" alt="viagens">
-                    <div>
-                    <span>Web site </span> - não esta pronto
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    </p>
-                    <button>Ver projeto</button>
-                </div>
-                </div>
-                <div id="itens-container"> 
-                    <img src="img/img-p-2.jpg" alt="viagens">
-                    <div>
-                    <span>Web site </span> - não esta pronto
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    </p>
-                    <button>Ver projeto</button>
-                </div>
-                </div>
-                </div>
-            </div><!--container-->
+        </section>
     </main>
     <footer>
-        <div class="centro"> 
-            <div>
-            <h1>Syler<span>0x26</span></h1>
-            </div>
-            <div>
-                <h2>Redes sociais:</h2>
-                <div class="icon">
-                <a href="https://github.com/syler0x26" target="_blank"><i class="bi bi-github"></i></a>
-                <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
-                <a href="https://in.linkedin.com/?gad_source=1&gclid=CjwKCAiAiOa9BhBqEiwABCdG85ruWsocU2WI8kVz4ITuuHIY2me7B_5bhuq_U9y4SMdiO2glbtGJlBoCD4AQAvD_BwE" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <div class="container">
+            <div class="box">
+                <p>&copy; wesley <span>2025</span> todos os direitos reservados</p>
             </div>
         </div>
     </footer>
-    <div class="rodape">
-        <p>&copy;<span>2025</span> todos os direitos reservado</p>
-    </div>
-    <header>
-    <section class="imagem">
-        <img src="img/projeto-2.png" alt="fff">
-        </section>
-        <section class="imagem">
-        <img src="img/bg.jpg" alt="gggg">
-        </section>
-        <section class="imagem">
-        <img src="img/projeto 1.png" alt="ssss">
-        </section>
-    </header>
-    <script src="img/estilo/script.js"></script>
-    <script>
-        /*var $nome = window.prompt('hello, what is your name ?')
-        window.alert(`nice to meet you ${$nome} !!`)*/
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
