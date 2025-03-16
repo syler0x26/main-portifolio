@@ -29,7 +29,24 @@
     text-decoration: none;
     transition: 0.3s;
 }
-
+    /*Chrome, Edge e Safari*/
+    ::-webkit-scrollbar {
+        width: 12px; 
+        height: 12px; 
+      }
+  
+      ::-webkit-scrollbar-track {
+        background: var(--cor1); 
+      }
+  
+      ::-webkit-scrollbar-thumb {
+        background: var(--cor6); 
+        border-radius: 20px; 
+      }
+  
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--cor3); 
+      }
 html {
     scroll-behavior: smooth;
 }
@@ -334,6 +351,7 @@ section#contato{
     align-items: center;
     justify-content: center;
     background-color: var(--cor1);
+    
 }
 
 .box-contato {
