@@ -56,10 +56,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     font-family: var(--font-principal);
-    width: 100vw;
     overflow-x: hidden;
 }
-
 header {
     top: 0;
     right: 0;
@@ -73,7 +71,6 @@ header {
 }
 
 .container-header {
-    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -167,6 +164,7 @@ header section {
     align-items: center;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    width: 100%;
 }
 
 nav {
@@ -188,6 +186,7 @@ article {
     background-size: cover;
     background-attachment: fixed;
     height: 90vh;
+    width: 100%;
 }
 
 article h3 {
@@ -213,6 +212,7 @@ section#about {
 }
 .box-sobre {
     width: 100%;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -257,7 +257,7 @@ p {
 
 /*projetos*/
 section#projetos {
-    width: 100vw;
+    width: 100%;
     background-color: gray;
     background: url('../img/bkg-home.jpg') center center;
     background-size: cover;
@@ -265,6 +265,7 @@ section#projetos {
 }
 
 .container-projetos {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -343,6 +344,7 @@ button.bnt:hover {
 }
 section#contato{
     height: 100%;
+    width: 100%;
 }
 .container-contato {
     width: 100%;
@@ -355,6 +357,8 @@ section#contato{
 }
 
 .box-contato {
+    margin: auto;
+    text-align: center;
     background-color: var(--cor3);
     padding: 5rem;
     display: inline-block;
