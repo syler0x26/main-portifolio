@@ -1,0 +1,77 @@
+@use 'var' as v;
+@use 'home';
+@use 'about';
+@use 'skill';
+@use 'service';
+@use 'menu';
+@use 'caracters';
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+@font-face {
+    font-family: 'title';
+    src: url('../fonts/Glamour.ttf') format('truetype');
+    font-family: 'title2';
+    src: url('../fonts/NewtonHowardFont.ttf');
+}
+body {
+    background: #FEFEFE;
+    overflow-x: hidden;
+}
+section{
+    margin-top: 15rem;
+}
+section.excessão{
+    margin-top: 0rem;
+}
+/*contato*/
+#contato{
+    background-color: #e7e7e7;
+}
+.dropdown-toggle{
+    background: transparent;
+    border: none;
+    border-bottom: 0.2rem solid v.$cor6;
+    color: v.$cor6;
+    margin-top: 0.2rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+    &:hover {
+        background: v.$cor6;
+        color: white;
+    }
+    .dropdown-menu{
+        background: white;
+        border: 0.1rem solid v.$cor6;
+        box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+    }
+}
+.dropdown-item {
+    color: v.$cor6;
+    font-weight: 500;
+    transition:  0.2s;
+    &:hover {
+        background: v.$cor6;
+        color: white;
+    }
+}
+.btn-outline-info{
+    background: transparent;
+    border: none;
+    border-bottom: 0.1rem solid blue;
+    color: v.$cor6;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        border: 0.1rem solid blueviolet;
+        background: blueviolet;
+        color: white;
+    }
+    &:focus {
+        background-color: v.$cor6;
+        color: white;
+    }
+}
+.efeito, .caixa1, .caixa2, .caixa3, .esquerda, .direita, .bottom{
+    visibility: hidden;
+}

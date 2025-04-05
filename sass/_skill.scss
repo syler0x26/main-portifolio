@@ -1,0 +1,26 @@
+@use 'var' as v;
+.skill{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+.education{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-bottom: 0.2rem solid blue;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+    }
+}

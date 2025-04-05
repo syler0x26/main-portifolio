@@ -1,0 +1,17 @@
+@use 'var' as v;
+.btn-primary{
+    background-color: v.$cor6;
+    color: white;
+    border: 0.1rem solid v.$cor6;
+    padding: 0.9rem;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        border: 0.1rem solid blueviolet;
+        background: blueviolet;
+        color: white;
+    }
+    &:focus {
+        background-color: v.$cor6;
+        color: white;
+    }
+}

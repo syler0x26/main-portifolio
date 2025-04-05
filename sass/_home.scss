@@ -1,0 +1,39 @@
+@use 'var' as v;
+
+#home {
+    height: 87vh;
+    width: 100vw;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-outline-primary {
+    border: 0.1rem solid v.$cor6;
+    color: white;
+    background-color: v.$cor6;
+    padding: 0.9rem;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        border: 0.1rem solid blueviolet;
+        background: blueviolet;
+        color: white;
+    }
+
+    &:focus {
+        background-color: v.$cor6;
+        color: white;
+    }
+
+}
+.icon-home{
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: blueviolet;
+    }
+}
