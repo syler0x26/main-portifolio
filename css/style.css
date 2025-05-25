@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
 .home {
-  background: url("../img/wallpaper6666.png") no-repeat center center;
-  height: 85vh;
+  background: url("../img/background-nuvens.png") no-repeat center center;
+  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -15,14 +15,14 @@
   border-radius: 3rem;
   border-bottom: 0.1rem solid blueviolet;
   border-right: 0.1rem solid blueviolet;
-  color: white;
+  color: #2F7BF0;
   padding: 0.9rem;
   transition: all 0.3s ease-in-out;
 }
 .btn-outline-primary:hover {
   border-left: 0.1rem solid blueviolet;
   border-top: 0.1rem solid blueviolet;
-  background: rgba(137, 43, 226, 0.286);
+  background: #3b82f6;
   color: white;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .midias {
-  background-color: #0E0E0E;
+  background: url("../img/background-nuvens.png") no-repeat center center;
   padding: 5rem;
   padding-top: 6rem;
   margin-top: 3rem;
@@ -310,7 +310,7 @@ p {
 }
 
 span {
-  color: blueviolet;
+  color: #3b82f6;
 }
 
 a {
