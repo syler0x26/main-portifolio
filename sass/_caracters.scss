@@ -48,9 +48,7 @@ hr{
     transform: translateY(-80px);
 }
 .destaq{
-    background-image: linear-gradient(to top, blue, blueviolet, transparent);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: v.$cor6;
     font-size: 2em;
     font-weight: bold;
 }

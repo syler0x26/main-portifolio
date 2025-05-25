@@ -66,6 +66,10 @@
     .title-1{
          font-size: 3.0rem;
     }
+    .title-2{
+         font-size: 2.0rem;
+             margin-bottom: 0;
+    }
 }
 @media (max-width:768px) {
     

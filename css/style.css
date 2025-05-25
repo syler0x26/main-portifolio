@@ -125,7 +125,6 @@
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
-  cursor: default;
   transform: scale(1);
   transition: all 0.3s ease-in-out;
 }
@@ -136,9 +135,8 @@
   background-color: white;
   padding: 1rem;
   border-radius: 1rem;
-  border-bottom: 0.2rem solid blue;
+  border-bottom: 0.2rem solid #2F7BF0;
   box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
-  cursor: default;
   transform: scale(1);
   transition: all 0.3s ease-in-out;
 }
@@ -150,16 +148,27 @@
   background-color: #fff;
   border-radius: 8px;
   border: none;
-  border-bottom: 0.2rem solid blue;
+  border-bottom: 0.2rem solid #2F7BF0;
   box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
   padding: 16px;
   margin: 16px;
 }
+.card .btn-outline-info {
+  border-radius: 2rem;
+  border: 0.1rem solid blueviolet;
+  color: blueviolet;
+  padding: 0.9rem;
+  transition: all 0.3s ease-in-out;
+}
+.card .btn-outline-info:hover {
+  background: blueviolet;
+  color: white;
+}
 
 #projetos {
   background-color: #16171D;
-  padding: 5rem;
   margin-top: 3rem;
+  margin: 0 auto;
 }
 #projetos .box-p {
   border-bottom: 0.1rem solid blueviolet;
@@ -183,7 +192,7 @@
 
 /*contato*/
 #contato {
-  padding-top: 3rem;
+  padding-top: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,22 +240,8 @@
   color: white;
 }
 
-.btn-outline-info {
-  background: transparent;
-  border: none;
-  border-bottom: 0.1rem solid blue;
-  color: #2F7BF0;
-  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
-}
-.btn-outline-info:hover {
-  border: 0.1rem solid blueviolet;
-  background: blueviolet;
-  color: white;
-}
-.btn-outline-info:focus {
-  background-color: #2F7BF0;
-  color: white;
+.btn-feedback {
+  margin-top: 2rem;
 }
 
 header {
@@ -347,9 +342,7 @@ hr {
 }
 
 .destaq {
-  background-image: linear-gradient(to top, blue, blueviolet, transparent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #2F7BF0;
   font-size: 2em;
   font-weight: bold;
 }

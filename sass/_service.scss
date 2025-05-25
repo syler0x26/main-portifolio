@@ -1,10 +1,22 @@
+@use 'var' as v;
 .card{
     background-color: #fff;
     border-radius: 8px;
     border: none;
-    border-bottom: 0.2rem solid blue;
+    border-bottom: 0.2rem solid v.$cor6;
     box-shadow:  0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
     padding: 16px;
     margin: 16px;
+    .btn-outline-info{
+        border-radius: 2rem;
+        border: 0.1rem solid v.$cor8;
+        color: v.$cor8;
+        padding: 0.9rem;
+        transition: all 0.3s ease-in-out;
 
+        &:hover {
+            background: v.$cor8;
+            color: white;
+        }
+    }
 }

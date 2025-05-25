@@ -1,7 +1,7 @@
 @use 'var' as v;
 /*contato*/
 #contato{
-    padding-top: 3rem;
+    padding-top: 8rem;
     display: flex;
      align-items: center;
      justify-content: center;
@@ -46,20 +46,6 @@
         color: white;
     }
 }
-.btn-outline-info{
-    background: transparent;
-    border: none;
-    border-bottom: 0.1rem solid blue;
-    color: v.$cor6;
-    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-    &:hover {
-        border: 0.1rem solid blueviolet;
-        background: blueviolet;
-        color: white;
-    }
-    &:focus {
-        background-color: v.$cor6;
-        color: white;
-    }
+.btn-feedback{
+    margin-top: 2rem;
 }
