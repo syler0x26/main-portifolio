@@ -1,0 +1,46 @@
+@use 'var' as v;
+
+/*atendimento*/
+.whatsapp {
+        background-color: rgba(20, 20, 34, 0.955);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    h2{
+          font-family: "Carattere", cursive;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: v.$cor2;
+        margin: 0 auto;
+        height: 100%;
+        width: 93%;
+        padding: 3rem 0 3rem 0;
+        border-radius: 3rem;
+        border-left: 0.2rem solid v.$cor6;
+        border-right: 0.2rem solid v.$cor8;
+
+        .row {
+            margin-top: 2rem;
+        }
+
+        .img-whatsapp {
+            img {
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                border-top: 0.2rem solid v.$cor6;
+                border-left: 0.2rem solid v.$cor6;
+                border-right: 0.2rem solid v.$cor8;
+                border-bottom: 0.2rem solid v.$cor8;
+            }
+        }
+    }
+
+}

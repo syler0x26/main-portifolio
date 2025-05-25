@@ -1,7 +1,8 @@
 @use 'var' as v;
 h1{
-    color: black;
+    color: #fefefe;
     font-weight: bold;
+    font-size: 3rem;
 }
 h2{
     color: #585e6c;
@@ -12,8 +13,11 @@ h3{
     font-weight: bold;
 }
 p{
-    color: black;
-    font-weight: bold;
+    color: #585e6c;
+    font-weight: 500;
+}
+span{
+    color: blueviolet;
 }
 a{
     color: #359382da;
@@ -24,18 +28,16 @@ hr{
     border: 0.1rem solid v.$cor6;
 }
 .logo h1{
-    background-image: linear-gradient(to top, v.$cor6, v.$cor5, v.$cor4, v.$cor3, v.$cor2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(54, 9, 95);
     font-size: 2em;
-    font-weight: bold;
+    font-weight: 800;
 }
 .title-1{
     padding-top: 2rem;
     font-size: 4.5rem;
     font-weight: 800;
     margin-bottom: 2rem;
-    background: linear-gradient(to top, transparent 0%, black 70%);
+    background: linear-gradient(to top, transparent 0%, rgb(33, 0, 124) 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: .1;

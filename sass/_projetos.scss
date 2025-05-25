@@ -1,0 +1,25 @@
+@use 'var' as v;
+#projetos{
+    background-color: #16171D;
+    padding: 5rem;
+    margin-top: 3rem;
+    .box-p{
+        border-bottom: 0.1rem solid blueviolet;
+        border-top: 0.1rem solid blueviolet;
+        margin-top: 2rem;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+    .box-int{
+        background-color: blueviolet;
+        border-radius: 2rem;
+        width: auto;
+        height: 150px;
+        overflow: hidden;
+        background: url('../img/projeto-1-p.png') ;    
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

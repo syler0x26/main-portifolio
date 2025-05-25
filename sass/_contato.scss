@@ -1,0 +1,65 @@
+@use 'var' as v;
+/*contato*/
+#contato{
+    padding-top: 3rem;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+    background-color: #16171D;
+    i{
+        color: v.$cor6;
+        font-size: 2rem;
+        margin-right: 0.5rem;
+    }
+    .form{
+        padding: 2rem;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+        border-left: 0.1rem solid blueviolet;
+        border-right: 0.1rem solid blueviolet;
+        border-bottom: 0.1rem solid blueviolet;
+    }
+}
+.dropdown-toggle{
+    background: transparent;
+    border: none;
+    border-bottom: 0.2rem solid v.$cor6;
+    color: v.$cor6;
+    margin-top: 0.2rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+    &:hover {
+        background: v.$cor6;
+        color: white;
+    }
+    .dropdown-menu{
+        background: white;
+        border: 0.1rem solid v.$cor6;
+        box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+    }
+}
+.dropdown-item {
+    color: v.$cor6;
+    font-weight: 500;
+    transition:  0.2s;
+    &:hover {
+        background: v.$cor6;
+        color: white;
+    }
+}
+.btn-outline-info{
+    background: transparent;
+    border: none;
+    border-bottom: 0.1rem solid blue;
+    color: v.$cor6;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        border: 0.1rem solid blueviolet;
+        background: blueviolet;
+        color: white;
+    }
+    &:focus {
+        background-color: v.$cor6;
+        color: white;
+    }
+}

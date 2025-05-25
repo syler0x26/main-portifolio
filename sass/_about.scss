@@ -1,17 +1,48 @@
 @use 'var' as v;
-.btn-primary{
-    background-color: v.$cor6;
-    color: white;
-    border: 0.1rem solid v.$cor6;
-    padding: 0.9rem;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-        border: 0.1rem solid blueviolet;
-        background: blueviolet;
-        color: white;
+
+#about {
+    h1 {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        background: linear-gradient(230deg, #FFD700, #FFFACD, #FFA500, #FFD700);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: shine 3s infinite linear;
+
     }
+
+    .col-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            border: 0.5rem solid #fefefe;
+            box-shadow: 0 0.3rem 0.4rem 0.1rem #00000043;
+        }
+    }
+}
+
+.btn-cv {
+    border-radius: 3rem;
+    border-bottom: 0.1rem solid v.$cor8;
+    border-right: 0.1rem solid v.$cor8;
+    color: black;
+    padding: 0.9rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem v.$cor3;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        border-left: 0.1rem solid v.$cor8;
+        border-top: 0.1rem solid v.$cor8;
+        background: rgba(167, 166, 169, 0.286);
+        color: v.$cor6;
+    }
+
     &:focus {
         background-color: v.$cor6;
         color: white;
     }
+
 }

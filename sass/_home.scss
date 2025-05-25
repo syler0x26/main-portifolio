@@ -1,32 +1,26 @@
 @use 'var' as v;
-
-#home {
-    height: 87vh;
+.home {
+    background: url('../img/wallpaper6666.png') no-repeat center center;
+    height: 85vh;
     width: 100vw;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-    position: relative;
+   
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .btn-outline-primary {
-    border: 0.1rem solid v.$cor6;
+    border-radius: 3rem;
+    border-bottom: 0.1rem solid v.$cor8;
+        border-right: 0.1rem solid v.$cor8;
     color: white;
-    background-color: v.$cor6;
     padding: 0.9rem;
     transition: all 0.3s ease-in-out;
     &:hover {
-        border: 0.1rem solid blueviolet;
-        background: blueviolet;
-        color: white;
-    }
-
-    &:focus {
-        background-color: v.$cor6;
+        border-left: 0.1rem solid v.$cor8;
+        border-top: 0.1rem solid v.$cor8;
+        background: rgba(137, 43, 226, 0.286);
         color: white;
     }
 
