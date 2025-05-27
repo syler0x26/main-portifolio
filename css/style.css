@@ -68,10 +68,6 @@
   background: rgba(167, 166, 169, 0.286);
   color: #2F7BF0;
 }
-.btn-cv:focus {
-  background-color: #2F7BF0;
-  color: white;
-}
 
 /*atendimento*/
 .whatsapp {
