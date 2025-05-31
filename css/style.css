@@ -117,7 +117,6 @@
 }
 
 #skills .skill {
-  background-color: white;
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
@@ -240,47 +239,35 @@
   margin-top: 2rem;
 }
 
-header {
-  backdrop-filter: blur(10px);
+.cabecalho {
   position: fixed;
-  left: 0;
-  right: 0;
   top: 0;
-  z-index: 99;
-  border-bottom: 0.2rem solid blur(10px);
+  width: 100%;
+  z-index: 999;
 }
-header .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .navbar .container-fluid {
-  background: transparent;
-}
-header .navbar .navbar-brand {
+.cabecalho .navbar-brand {
   font-family: "Carattere", cursive;
   font-size: 2rem;
   color: #2F7BF0;
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
-header .navbar .navbar-brand:hover {
+.cabecalho .navbar-brand:hover {
   color: blueviolet;
 }
-header .navbar .navbar-nav .nav-link {
+.cabecalho .navbar-nav .nav-link {
   color: #2F7BF0;
   font-weight: 500;
   transition: color 0.2s ease-in-out;
 }
-header .navbar .navbar-nav .nav-link:hover {
+.cabecalho .navbar-nav .nav-link:hover {
   color: blueviolet;
 }
-header .navbar-toggler {
+.cabecalho .navbar-toggler {
   border: none;
-  background: transparent;
   color: blue;
 }
-header .navbar-toggler:focus {
+.cabecalho .navbar-toggler:focus {
   box-shadow: none;
 }
 
@@ -354,15 +341,10 @@ hr {
   font-family: "title2";
   src: url("../fonts/NewtonHowardFont.ttf");
 }
-body {
+html, body {
   background: #FEFEFE;
   overflow-x: hidden;
-}
-
-main {
-  background: url("../img/neon-background.svg");
-  background-size: cover;
-  background-position: 50%;
+  padding-top: 35px;
 }
 
 .efeito, .caixa1, .caixa2, .caixa3, .esquerda, .direita, .bottom {
