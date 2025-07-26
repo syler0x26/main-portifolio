@@ -1,6 +1,8 @@
 @use 'var' as v;
 
 #about {
+ background: url('../img/wallpapercaracol.png') ;
+ background-size: cover;
     h1 {
         font-size: 3em;
         font-weight: bold;

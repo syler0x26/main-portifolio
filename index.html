@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link rel="shortcut icon" href="img/logo-catsyler.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo-caracol.png" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal" defer></script>
     <script src="script.js" defer> </script>
     <!--boostrap-->
@@ -29,7 +29,7 @@
     <header class="cabecalho">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Syler0x26</a>
+                <img src="img/logo-caracol.png" alt="logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -60,6 +60,14 @@
             </div>
         </nav>
     </header>
+<div class="custom-cursor"></div>
+<div class="cursor"></div>
+<div class="trail"></div>
+<div class="trail"></div>
+<div class="trail"></div>
+<div class="trail"></div>
+<div class="trail"></div>
+
     <section class="home">
         <div class="container">
             <div class="row">
@@ -620,6 +628,49 @@
             })
         })()
     </script>
+<script>
+  const cursor = document.querySelector(".cursor");
+  const trails = document.querySelectorAll(".trail");
+
+  let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+  let positions = [];
+
+  // Função para centralizar a bolinha no ponteiro
+  function updateCursorPosition() {
+    const rect = cursor.getBoundingClientRect();
+    const offsetX = rect.width / 2;
+    const offsetY = rect.height / 2;
+
+    cursor.style.transform = `translate(${mouse.x - offsetX}px, ${mouse.y - offsetY}px)`;
+  }
+
+  document.addEventListener("mousemove", (e) => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+  });
+
+  for (let i = 0; i < trails.length; i++) {
+    positions.push({ x: mouse.x, y: mouse.y });
+  }
+
+  function animate() {
+    updateCursorPosition();
+
+    for (let i = trails.length - 1; i >= 0; i--) {
+      const next = i === 0 ? mouse : positions[i - 1];
+      positions[i].x += (next.x - positions[i].x) * 0.25;
+      positions[i].y += (next.y - positions[i].y) * 0.25;
+
+      trails[i].style.transform = `translate(${positions[i].x - 5}px, ${positions[i].y - 5}px)`;
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
+
+
 </body>
 
 </html>

@@ -33,6 +33,10 @@
   color: blueviolet;
 }
 
+#about {
+  background: url("../img/wallpapercaracol.png");
+  background-size: cover;
+}
 #about h1 {
   font-size: 3em;
   font-weight: bold;
@@ -341,10 +345,16 @@ hr {
   font-family: "title2";
   src: url("../fonts/NewtonHowardFont.ttf");
 }
+* {
+  cursor: none !important;
+}
+
 html, body {
   background: #FEFEFE;
   overflow-x: hidden;
   padding-top: 20px;
+  margin: 0;
+  cursor: none;
 }
 
 .efeito, .caixa1, .caixa2, .caixa3, .esquerda, .direita, .bottom {
@@ -358,6 +368,27 @@ html, body {
 .adicionais .row {
   flex-wrap: wrap;
   width: 100%;
+}
+
+.cursor,
+.trail {
+  position: fixed;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border: 0.1rem solid #3b82f6;
+  background-color: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  top: 0;
+  border: 0.1rem solid #3b82f6;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
