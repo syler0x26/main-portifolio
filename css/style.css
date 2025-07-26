@@ -13,15 +13,13 @@
 
 .btn-outline-primary {
   border-radius: 3rem;
-  border-bottom: 0.1rem solid blueviolet;
-  border-right: 0.1rem solid blueviolet;
+  border: 0.1rem solid #2F7BF0;
   color: #2F7BF0;
   padding: 0.9rem;
   transition: all 0.3s ease-in-out;
 }
 .btn-outline-primary:hover {
-  border-left: 0.1rem solid blueviolet;
-  border-top: 0.1rem solid blueviolet;
+  border: 0.1rem solid #a5b3f7;
   background: #3b82f6;
   color: white;
 }
@@ -30,7 +28,7 @@
   transition: all 0.3s ease-in-out;
 }
 .icon-home:hover {
-  color: blueviolet;
+  color: #fff;
 }
 
 #about {
@@ -243,6 +241,30 @@
   margin-top: 2rem;
 }
 
+footer {
+  background: #a5b3f7;
+  color: #2F7BF0;
+  padding: 2rem 0;
+  text-align: center;
+}
+footer #midias-s {
+  height: 10rem;
+  width: 10rem;
+  color: gray;
+}
+footer p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+footer a {
+  color: blueviolet;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: #737373;
+}
+
 .cabecalho {
   position: fixed;
   top: 0;
@@ -265,7 +287,7 @@
   transition: color 0.2s ease-in-out;
 }
 .cabecalho .navbar-nav .nav-link:hover {
-  color: blueviolet;
+  color: #a5b3f7;
 }
 .cabecalho .navbar-toggler {
   border: none;
@@ -380,15 +402,28 @@ html, body {
   background-color: #fff;
   border-radius: 50%;
   pointer-events: none;
-  z-index: 10000;
+  z-index: 9998;
 }
 
 .cursor {
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   top: 0;
   border: 0.1rem solid #3b82f6;
   background-color: #fff;
+  background: url("../img/mouse.png") center center;
+  background-size: cover;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: #FEFEFE;
+}
+.modal-content .modal-header {
+  background: linear-gradient(to top, #FEFEFE, #a5b3f7);
+}
+.modal-content .modal-footer {
+  background: linear-gradient(to bottom, #FEFEFE, #a5b3f7);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,15 +13,13 @@
 
 .btn-outline-primary {
     border-radius: 3rem;
-    border-bottom: 0.1rem solid v.$cor8;
-    border-right: 0.1rem solid v.$cor8;
+    border: 0.1rem solid v.$cor6;
     color: v.$cor6;
     padding: 0.9rem;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        border-left: 0.1rem solid v.$cor8;
-        border-top: 0.1rem solid v.$cor8;
+        border: 0.1rem solid #a5b3f7ff;
         background: #3b82f6;
         color: white;
     }
@@ -32,6 +30,6 @@
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        color: blueviolet;
+        color: #fff;
     }
 }

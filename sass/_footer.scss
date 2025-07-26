@@ -1,0 +1,27 @@
+@use 'var' as v;
+footer {
+    background: #a5b3f7ff;
+    color: v.$cor6;
+    padding: 2rem 0;
+    text-align: center;
+    #midias-s {
+        height: 10rem;
+        width: 10rem;
+        color: gray;
+    }
+    p {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    a {
+        color: v.$cor8;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: v.$cor7;
+        }
+    }
+
+}

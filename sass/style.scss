@@ -7,6 +7,7 @@
 @use 'service';
 @use 'projetos';
 @use 'contato';
+@use 'footer';
 @use 'menu';
 @use 'caracters';
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
@@ -54,14 +55,25 @@ html,body {
   background-color: #fff;
   border-radius: 50%;
   pointer-events: none;
-  z-index: 10000;
+  z-index: 9998;
 }
 
 .cursor {
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   top: 0;
   border: 0.1rem solid #3b82f6;
   background-color: #fff;
-  
+  background: url('../img/mouse.png') center center;
+  background-size: cover;
+  z-index: 9999;
+}
+.modal-content{
+    background-color: #FEFEFE;
+    .modal-header{
+background: linear-gradient(to top, #FEFEFE, #a5b3f7ff);
+    }
+    .modal-footer{
+        background: linear-gradient(to bottom, #FEFEFE, #a5b3f7ff);
+    }
 }
