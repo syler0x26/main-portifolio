@@ -243,26 +243,18 @@
 
 footer {
   background: #a5b3f7;
-  color: #2F7BF0;
-  padding: 2rem 0;
+  color: black;
   text-align: center;
+  padding: 1rem;
 }
-footer #midias-s {
-  height: 10rem;
-  width: 10rem;
-  color: gray;
+footer i {
+  font-size: 1.7rem;
+  color: #000;
+  margin: 0.5rem;
+  transition: all 0.3s ease-in-out;
 }
-footer p {
-  margin: 0;
-  font-size: 1.2rem;
-}
-footer a {
+footer i:hover {
   color: blueviolet;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-footer a:hover {
-  color: #737373;
 }
 
 .cabecalho {
