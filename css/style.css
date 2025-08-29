@@ -32,8 +32,8 @@
 }
 
 #about {
-  background: url("../img/wallpapercaracol.png");
-  background-size: cover;
+  /*  background: url('../img/wallpapercaracol.png') ;
+   background-size: cover; */
 }
 #about h1 {
   font-size: 3em;
